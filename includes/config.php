@@ -20,7 +20,7 @@ if ($mysqli->connect_errno) {
 $mysqli->set_charset('utf8mb4');
 
 // ---------- PATHS ----------
-define('BASE_URL', '/skillshare/public/');
+define('BASE_URL', getenv('SKILLSHARE_BASE_URL') ?: '/public/');
 define('UPLOAD_DIR', __DIR__ . '/../assets/uploads/');
 
 if (!is_dir(UPLOAD_DIR)) {
