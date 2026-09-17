@@ -16,7 +16,7 @@ PHP / MySQL
 
 ## Getting Started
 
-Requires PHP with PDO MySQL and a local MySQL/MariaDB database. Import `sql/schema.sql`, then the explicitly labeled demonstration seed `sql/seed.sql`. Check `includes/config.php` for the original local database name and root/empty-password development defaults. Serve the `public` directory with PHP, for example `php -S localhost:8000 -t public`, and visit localhost:8000. This is historical local coursework; debug diagnostics and session/CSRF behavior have not been validated for deployment. The seed contains deliberate demo accounts; original account database exports are excluded.
+Requires PHP with the `mysqli` extension and a local MySQL/MariaDB database. Create an empty `skillshare_local` database and import `sql/schema.sql`, then the explicitly labeled demonstration seed `sql/seed.sql`. Check `includes/config.php` for the original local database name and root/empty-password development defaults. Match `BASE_URL` in that configuration to your server: the original `/skillshare/public/` assumes an XAMPP subdirectory; set it to `/` when serving `public` as the document root. Serve the `public` directory with PHP, for example `php -S localhost:8000 -t public`, and visit localhost:8000. This is historical local coursework; debug diagnostics and session/CSRF behavior have not been validated for deployment. The seed contains deliberate demo accounts; original account database exports are excluded.
 
 ## Validation
 
